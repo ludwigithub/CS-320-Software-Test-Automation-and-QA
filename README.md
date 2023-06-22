@@ -6,7 +6,7 @@
   <br><br>
 <b>How do I interpret user needs and incorporate them into a program?</b>
   <br>
-  I used the software requirements as an outline for testing. All three class components (Contact, Task, and Appointment) of the software requirements included a unique ID for that service.
+  As an example in this project, I used the software requirements as an outline for testing. All three class components (Contact, Task, and Appointment) of the software requirements included a unique ID for that service.
 - Each object required a unique ID String that could not be longer than 10 characters and could not be null or updatable. Achieved by setting object ID to final and setting the conditional checks where (objectID == null || objectID.length() > 10) invoked an error.
 - Each object also required various String fields that could not be longer than a set number of characters and could not be null. Achieved by setting the conditional checks where (objectRequirement == null || objectRequirement.length() > xx) invoked an error.
 - One requirement unique to the Appointment class was a required appointment Date field that could not be in the past and could not be null. Achieved by importing java.util.Date and use of before(new Date()) for past dates.
